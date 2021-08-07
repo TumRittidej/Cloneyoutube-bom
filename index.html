@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Youtube2</title>
+
+    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div class="nav-top">
+        <div class="container">
+            <nav>
+                <ul class="logo">
+                    <li><i class="fas fa-bars" onclick="toggleMenu()"></i></li>
+                    <li><a href="#"><img src="./img/logo.png" alt=""></a></li>
+                </ul>
+
+                <ul class="searchbox">
+                    <input type="text" placeholder="Search">
+                    <button><i class="fas fa-search" onclick="showInput()"></i></button>
+                    <li><a href="#"><i class="fas fa-microphone"></i></a></li>
+                </ul>
+
+                <ul class="usermenu">
+                    <li><a href="#"><i class="fas fa-video"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <button><a href="#"><img src="./img/user.jpg" alt="" onclick="showProfile()"></a></button>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="memu">
+            <div class="profile-user">
+                <img src="./img/user.jpg" alt="">
+                <div class="para">
+                    <h2>RITTIDEJ WONGPIYA</h2>
+                    <p>w.rittidej@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="logosidebar-box">
+        <div class="container">
+            <ul class="logosidebar">
+                <li><a href="#"><i class="fas fa-bars" onclick="leaveSidebar()"></i></a></li>
+                <li><a href="#"><img src="./img/logo1.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div> -->
+    <nav class="sidebar">
+        <div class="sidebar-home">
+
+            <ul class="menuhome">
+                <li><a href="#"><i class="fas fa-home"></i>
+                        <h5>Home</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-compass"></i>
+                        <h5>Explore</h5>
+                    </a> </li>
+                <li><a href="#"><i class="fas fa-book"></i>
+                        <h5>Supscription</h5>
+                    </a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i>
+                        <h5>Originals</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i>
+                        <h5>YouTube Music</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-library">
+            <ul class="menulibrary">
+                <li><a href="#"><i class="fas fa-play"></i>
+                        <h5>Library</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-history"></i>
+                        <h5>History</h5>
+                    </a> </li>
+                <li><a href="#"><i class="far fa-clock"></i>
+                        <h5>History</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-thumbs-up"></i>
+                        <h5>Liked video</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-bars"></i>
+                        <h5>สากล</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-supscription">
+            <ul class="menusupscription">
+                <h3>SUBSCRIPTIONS</h3>
+                <li><a href="#"><img src="./img/user.jpg" alt="">
+                        <h5>RITTIDEJ WONGPIYA</h5>
+                    </a></li>
+                <li><a href="#"><img src="./img/user.jpg" alt="">
+                        <h5>RITTIDEJ WONGPIYA</h5>
+                    </a></li>
+                <li><a href="#"><img src="./img/user.jpg" alt="">
+                        <h5>RITTIDEJ WONGPIYA</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-morefromyoutube">
+            <ul class="morefromyoutube">
+                <h3>MORE FROM YOUTUBE</h3>
+                <li><a href="#"><i class="fas fa-gamepad"></i>
+                        <h5>Gameing</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-satellite-dish"></i>
+                        <h5>Live</h5>
+                    </a> </li>
+                <li><a href="#"><i class="fas fa-trophy"></i>
+                        <h5>Sports</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-settings">
+            <ul class="menusettings">
+                <li><a href="#"><i class="fas fa-cog"></i>
+                        <h5>Setting</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-flag"></i>
+                        <h5>Report history</h5>
+                    </a> </li>
+                <li><a href="#"><i class="fas fa-question-circle"></i>
+                        <h5>Help</h5>
+                    </a></li>
+                <li><a href="#"><i class="fas fa-exclamation-circle"></i>
+                        <h5>Send feedback</h5>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="sidebar-about">
+            <ul class="about">
+                <li>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Copyright</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Creator</a>
+                    <a href="#">Advertise</a>
+                    <a href="#">Developers</a>
+                </li>
+            </ul>
+            <ul class="terms">
+                <li>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Policy & Safety</a>
+                    <a href="#">How YouTube works</a>
+                    <a href="#">Test new features</a>
+                </li>
+            </ul>
+            <p class="sidebarcopyright">&copy; 2021 Google LLC</p>
+
+        </div>
+    </nav>
+
+
+    <div class="sidebar-icon">
+        <ul class="menuicon">
+            <li><a href="#"><i class="fas fa-home"></i>
+                    <h5>Home</h5>
+                </a></li>
+            <li><a href="#"><i class="fas fa-compass"></i>
+                    <h5>Explore</h5>
+                </a> </li>
+            <li><a href="#"><i class="fas fa-book"></i>
+                    <h5>Supscription</h5>
+                </a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i>
+                    <h5>Originals</h5>
+                </a></li>
+            <li><a href="#"><i class="fas fa-play-circle"></i>
+                    <h5>YouTube Music</h5>
+                </a></li>
+            <li><a href="#"><i class="fas fa-play"></i>
+                    <h5>Library</h5>
+                </a></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <nav class="category-menu">
+            <ul class="category-menu-items">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Mixes</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Playlist</a></li>
+                <li><a href="#">GMM Grammy</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Chill-out music</a></li>
+                <li><a href="#">Computer program</a></li>
+                <li><a href="#">Rapping</a></li>
+                <li><a href="#">Premier League</a></li>
+                <li><a href="#">World Cap</a></li>
+                <li><a href="#">Conversation</a></li>
+                <li><a href="#">MOBA</a></li>
+                <li><a href="#">FIFA</a></li>
+                <li><a href="#">Indie games</a></li>
+                <li><a href="#">Combat sports</a></li>
+                <li><a href="#">Traffic</a></li>
+                <li><a href="#">Recently uploaded</a></li>
+                <li><a href="#">New to you</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
